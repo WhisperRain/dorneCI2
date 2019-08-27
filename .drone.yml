@@ -1,17 +1,9 @@
 kind: pipeline
 name: default
 
-workspace:
-  base: /go
-  path: src/github.com/webhookrelay/app
-
 steps:
-  - name: build
-    image: golang:1.11.4
+  - name: test
+    image: golang
     commands:
-      - cd cmd/app && go build
-
-  - name: unit-test
-    image: golang:1.11.4
-    commands:
-      - go test -v `go list ./... `
+      - go test
+      - go build
