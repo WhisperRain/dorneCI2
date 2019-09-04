@@ -1,4 +1,4 @@
-package CICD
+package main
 
 import (
 	"fmt"

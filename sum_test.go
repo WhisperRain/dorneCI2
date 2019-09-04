@@ -1,4 +1,4 @@
-package sumup
+package main
 
 import (
 	"testing"
