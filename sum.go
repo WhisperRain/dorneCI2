@@ -1,4 +1,4 @@
-package sumup
+package CICD
 
 // Sum returns the sum of the parameters
 func Sum(i int, j int) int {

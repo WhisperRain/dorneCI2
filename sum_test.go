@@ -73,3 +73,12 @@ func TestSum7(t *testing.T) {
 		t.Errorf("Sum should return %d instead of %d", reference, result)
 	}
 }
+
+func TestSum8(t *testing.T) {
+	reference := 40 + 2
+	result := Sum(40, 2)
+
+	if result != reference {
+		t.Errorf("Sum should return %d instead of %d", reference, result)
+	}
+}
